@@ -27,7 +27,7 @@ public class Cherries {
                 turns++;
                 if(cherries < 0){
                     // if after the spinner result is applied cherries is negative, it reverses it
-                    cherries = cherries - cherrySpinner(random, cherries);
+                    cherries = 0;
                 }
             }
             total += turns;
