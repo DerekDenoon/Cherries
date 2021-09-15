@@ -40,19 +40,17 @@ public class Cherries {
         System.out.println(df.format(avg));
     }
 
-
     public static int cherrySpinner(int x,int cherries){
         // takes in the number of cherries and returns the number that should be added to cherries based on the randomly
         // generated number
         return switch (x) {
-            case 1 -> 1;
-            case 2 -> 2;
-            case 3 -> 3;
-            case 4 -> 4;
+            case 1,2,3,4 -> x;
             case 5, 6 -> -2;
             case 7 -> (-cherries);
             default -> throw new IllegalStateException("Unexpected value: " + x);
         };
     }
+
+
 }
 
